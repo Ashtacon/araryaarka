@@ -55,3 +55,20 @@ ul li a:hover {
   border: 1px solid aqua !important;
   color: orange !important;
 }
+
+@media (max-width: 435px) {
+  #sidebar-medsos,
+  #sidebar-mode {
+    align-items: end !important;
+  }
+  #sidebar-medsos {
+    padding-bottom: 0.5rem;
+  }
+  #sidebar-mode {
+    padding-bottom: 1rem !important;
+  }
+  #name {
+    position: relative;
+    z-index: 2;
+  }
+}
