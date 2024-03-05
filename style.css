@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 * {
   font-family: "JetBrains Mono", sans-serif;
   font-weight: 600;
@@ -28,4 +30,24 @@ ul li a:hover {
   -moz-border-radius: 0 0 5px 5px;
   -ms-border-radius: 0 0 5px 5px;
   -o-border-radius: 0 0 5px 5px;
+}
+
+/* sidebar medsos */
+#sidebar-medsos {
+  z-index: 9999999;
+  width: 4rem;
+  background-color: #16161a;
+}
+
+.medsos-items {
+  box-sizing: border-box;
+  font-size: 2em;
+}
+.medsos-items:hover {
+  transition: 0.1s ease-in;
+  scale: 1.3;
+  -webkit-transition: 0.1s ease-in;
+  -moz-transition: 0.1s ease-in;
+  -ms-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
 }
