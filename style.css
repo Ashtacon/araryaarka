@@ -34,7 +34,6 @@ ul li a:hover {
 
 /* sidebar medsos */
 #sidebar-medsos {
-  z-index: 9999999;
   width: 4rem;
   background-color: #16161a;
 }
@@ -50,4 +49,12 @@ ul li a:hover {
   -moz-transition: 0.1s ease-in;
   -ms-transition: 0.1s ease-in;
   -o-transition: 0.1s ease-in;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #16161a;
+}
+
+.text-center {
+  text-align: center !important;
 }
