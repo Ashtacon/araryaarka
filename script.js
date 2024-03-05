@@ -26,9 +26,10 @@ function updateClock() {
   const bulan = currentDate.getMonth() + 1; // Ingat bahwa bulan dimulai dari 0
   const tahun = currentDate.getFullYear();
   const jam = currentDate.getHours();
-  const menit = currentDate.getMinutes();
-  const detik = currentDate.getSeconds();
-
+  //   const menit = currentDate.getMinutes();
+  //   const detik = currentDate.getSeconds();
+  const menit = ("0" + currentDate.getMinutes()).slice(-2);
+  const detik = ("0" + currentDate.getSeconds()).slice(-2);
   const tanggalFormatted = `${tanggal}-${bulan}-${tahun}`;
   const jamFormatted = `${jam}:${menit}:${detik}`;
 
