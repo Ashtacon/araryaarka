@@ -13,7 +13,7 @@
   background-color: #16161a;
 }
 ul li a {
-  color: rgba(108, 117, 125) !important;
+  color: #6c757d !important;
   font-size: 1.2rem !important;
 }
 
@@ -49,6 +49,7 @@ ul li a:hover {
 
 .btn-outline-secondary:hover {
   background-color: #16161a;
+  color: #8c949b;
 }
 
 .light:hover {
