@@ -82,6 +82,12 @@ ul li a:hover {
 .light:hover .music {
   color: teal !important;
 }
+.dark:hover {
+  border: 1px solid aqua !important;
+}
+.dark:hover .dark-logo {
+  color: aquamarine !important;
+}
 @media (max-width: 435px) {
   #sidebar-medsos,
   #sidebar-mode {
