@@ -19,30 +19,33 @@ typewriter
 // Mendapatkan elemen dengan ID "tanggal"
 const tanggalElement = document.getElementById("tanggal");
 
-// Membuat objek tanggal
-const currentDate = new Date();
+// Fungsi untuk memperbarui waktu
+function updateClock() {
+  const currentDate = new Date();
+  const tanggal = currentDate.getDate();
+  const bulan = currentDate.getMonth() + 1; // Ingat bahwa bulan dimulai dari 0
+  const tahun = currentDate.getFullYear();
+  const jam = currentDate.getHours();
+  const menit = currentDate.getMinutes();
+  const detik = currentDate.getSeconds();
 
-// Mendapatkan informasi tanggal, bulan, dan tahun
-const tanggal = currentDate.getDate();
-const bulan = currentDate.getMonth() + 1; // Ingat bahwa bulan dimulai dari 0
-const tahun = currentDate.getFullYear();
+  const tanggalFormatted = `${tanggal}-${bulan}-${tahun}`;
+  const jamFormatted = `${jam}:${menit}:${detik}`;
 
-// Mendapatkan informasi jam, menit, dan detik
-const jam = currentDate.getHours();
-const menit = currentDate.getMinutes();
-const detik = currentDate.getSeconds();
+  // Mendapatkan zona waktu lokal pengguna
+  const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-// Format tanggal dan jam sesuai kebutuhan, misalnya: DD-MM-YYYY HH:MM:SS
-const tanggalFormatted = `${tanggal}-${bulan}-${tahun}`;
-const jamFormatted = `${jam}:${menit}:${detik}`;
+  // Mendapatkan waktu lokal sesuai zona waktu pengguna
+  const waktuLokal = currentDate.toLocaleString("id-ID", {
+    timeZone: userTimeZone,
+  });
 
-// Mendapatkan zona waktu lokal pengguna
-const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  // Menambahkan teks tanggal dan jam ke dalam elemen dengan ID "tanggal"
+  tanggalElement.textContent = `Time: ${jamFormatted} | ${tanggalFormatted}`;
+}
 
-// Mendapatkan waktu lokal sesuai zona waktu pengguna
-const waktuLokal = currentDate.toLocaleString("id-ID", {
-  timeZone: userTimeZone,
-});
+// Memanggil fungsi pertama kali
+updateClock();
 
-// Menambahkan teks tanggal dan jam ke dalam elemen dengan ID "tanggal"
-tanggalElement.textContent = `Time: ${jamFormatted} | ${tanggalFormatted} `;
+// Mengatur interval pembaruan waktu setiap detik (1000 milidetik)
+setInterval(updateClock, 1000);
