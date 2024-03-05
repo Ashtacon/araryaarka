@@ -44,3 +44,13 @@ function updateClock() {
 updateClock();
 
 setInterval(updateClock, 1000);
+
+const audio = document.getElementById("backsound");
+
+const toggleSound = () => {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+};

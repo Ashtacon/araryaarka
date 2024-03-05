@@ -30,12 +30,7 @@ body {
 
 /* Navbar */
 #nav {
-  background-color: #16161a;
-  border-radius: 0 0 10px 10px;
-  -webkit-border-radius: 0 0 10px 10px;
-  -moz-border-radius: 0 0 10px 10px;
-  -ms-border-radius: 0 0 10px 10px;
-  -o-border-radius: 0 0 10px 10px;
+  background-color: #16161aed;
 }
 ul li a {
   color: #6c757d !important;
@@ -79,9 +74,14 @@ ul li a:hover {
 
 .light:hover {
   border: 1px solid aqua !important;
-  color: orange !important;
 }
 
+.light:hover .light-logo {
+  color: orange !important;
+}
+.light:hover .music {
+  color: teal !important;
+}
 @media (max-width: 435px) {
   #sidebar-medsos,
   #sidebar-mode {
