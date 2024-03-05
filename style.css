@@ -95,6 +95,6 @@ ul li a:hover {
   }
   #name {
     position: relative;
-    z-index: 2;
+    z-index: 10;
   }
 }
