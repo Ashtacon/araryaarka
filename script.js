@@ -15,7 +15,7 @@ typewriter
   .typeString("Full Stack WebDev.")
   .pauseFor(500)
   .deleteChars(19)
-  .typeString("Cosplayer")
+  .typeString("Cosplayer.")
   .pauseFor(1000)
   .start();
 
