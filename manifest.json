@@ -10,7 +10,7 @@
       "src": "img/Logo.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
       "src": "img/Logo.png",
