@@ -1,0 +1,29 @@
+{
+  "name": "Ararya Arka Anugraha - Portofolio",
+  "short_name": "Arka Portofolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#161616",
+  "theme_color": "#161616",
+  "icons": [
+    {
+      "src": "img/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+
+    {
+      "src": "img/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "splash_pages": null,
+  "splash_screen": {
+    "show": true,
+    "full_screen": true,
+    "background_color": "#161616"
+  }
+}
