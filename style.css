@@ -2,14 +2,11 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-/* body {
-  height: 200rem;
-} */
-
 * {
   font-family: "JetBrains Mono", sans-serif;
   font-weight: 600;
   font-style: normal;
+  color: #94a6b2; /* Perubahan warna teks */
 }
 
 ::-webkit-scrollbar {
@@ -28,17 +25,21 @@
   background-color: #8c949b;
 }
 
+.text-secondary {
+  color: #94a6b2 !important;
+}
+
 /* Navbar */
 #nav {
   background-color: #16161aed;
 }
 ul li a {
-  color: #6c757d !important;
+  color: #94a6b2 !important; /* Perubahan warna teks */
   font-size: 1.2rem !important;
 }
 
 ul li a:hover {
-  color: #94a1b2 !important;
+  color: #c8d5e6 !important;
 }
 
 #hero {
@@ -58,7 +59,7 @@ ul li a:hover {
   font-size: 1.8em;
 }
 .medsos-items:hover {
-  color: #94a1b2;
+  color: #94a6b2; /* Perubahan warna teks */
   transition: 0.1s ease-in;
   scale: 1.2;
   -webkit-transition: 0.1s ease-in;
@@ -67,9 +68,15 @@ ul li a:hover {
   -o-transition: 0.1s ease-in;
 }
 
+.btn-outline-secondary {
+  border: 1px solid #94a6b2;
+  color: #94a6b2;
+}
+
 .btn-outline-secondary:hover {
   background-color: #16161a;
-  color: #8c949b;
+  color: #c8d5e6;
+  border: 1px solid #c8d5e6;
 }
 
 .light:hover {
